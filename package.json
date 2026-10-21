@@ -1,0 +1,19 @@
+{
+  "name": "pi-link-format",
+  "version": "1.0.0",
+  "description": "Rewrite Markdown links in Pi assistant messages",
+  "keywords": ["pi-package"],
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "overrides": {
+    "undici": "^8.12.2"
+  }
+}
